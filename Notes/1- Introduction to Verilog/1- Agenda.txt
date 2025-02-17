@@ -1,0 +1,11 @@
+1. Verilog HDL Overview
+2. Basic Structure of a Verilog HDL Model
+3. Components of a Verilog HDL Module
+    . Ports
+    . Data Types
+    . Assigning Values and Numbers
+    . Operators
+    . Behavioral Modeling
+        . Continuous Assignments
+        . Procedural Blocks
+4. Tasks and Functions
