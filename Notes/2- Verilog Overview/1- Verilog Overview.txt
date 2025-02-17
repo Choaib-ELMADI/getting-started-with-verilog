@@ -1,0 +1,13 @@
+1. What is Verilog?
+    -> Verilog is an IEEE industry standard Hardware Description Language (HDL), used to describe circuits and digital systems that will be implemented in hardware.
+    -> Verilog is used for both purposes hardware simulation and synthesis.
+
+2. Verilog History:
+    -> Introduced in '1984' by 'Gateway Design Automation'.
+    -> '1989' 'Cadence Design Systems' purchased 'Gateway' (Verilog-XL simulator).
+    -> '1990' 'Cadence Design Systems' released Verilog to the public.
+    -> 'Open Verilog International' (OVI) was formed to control the language specifications.
+    -> '1993' OVI released version 2.0.
+    -> '1995' IEEE accepted OVI Verilog as a standard, Verilog 1364.
+    -> '2001' IEEE revised standard.
+    -> '2005' IEEE accepted new version for the standard.

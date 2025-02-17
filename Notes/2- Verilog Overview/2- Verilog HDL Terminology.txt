@@ -1,0 +1,14 @@
+1. Verilog HDL Terminology:
+    -> HDL: stands for Hardware Description Language, is a software programming language that is used to model a piece of hardware.
+    -> HDLs have two ways to model a circuit:
+        > Behavior Modeling:
+            - A component is described by its input/output response.
+            - We are describing the functionality of the circuit, and not its structure.
+            - Synthesis tools create the correct circuits that match the behavior described.
+
+        > Structural Modeling:
+            - A component is described by its interconnecting lower-level components/primitives.
+            - Both functionality and structure are described.
+            - HDL engineers call out particular hardware elements (lower-level components) and wire them together.
+            - A higher-level component consists of multiple lower-level components.
+            - Hardware elements can be as simple as an OR/AND gate or a model that represents another layer of abstraction.
