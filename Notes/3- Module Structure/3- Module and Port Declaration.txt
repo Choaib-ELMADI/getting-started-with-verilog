@@ -1,0 +1,13 @@
+1. Module Declaration:
+    -> Begins with keyword "module" and ends with keyword "endmodule".
+    -> Provides module name.
+    -> Includes port list, if any.
+
+2. Port Types:
+    -> input    ==> Input port
+    -> output   ==> Output port
+    -> inout    ==> Bidirectional port
+
+3. Port Declarations:
+    -> <port_type> <port_name>;
+    -> Buses have a square bracket "[]", after the port type, that specifies the bus size.
