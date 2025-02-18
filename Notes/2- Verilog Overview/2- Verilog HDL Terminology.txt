@@ -12,3 +12,10 @@
             - HDL engineers call out particular hardware elements (lower-level components) and wire them together.
             - A higher-level component consists of multiple lower-level components.
             - Hardware elements can be as simple as an OR/AND gate or a model that represents another layer of abstraction.
+
+    -> RTL: stands for Register Transfer Level, is a term that describes a type of behavioral modeling for the purpose of synthesis.
+        > Hardware is implied or inferred.
+        > RTL constructs are synthesizable.
+
+    -> Synthesis: refers to both the translation and optimization of HDL code into a circuit of particular technology.
+    -> RTL Synthesis: refers to the translation of an RTL model into an optimized technology, specifically gate level implementation.
