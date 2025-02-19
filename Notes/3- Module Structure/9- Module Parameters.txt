@@ -1,0 +1,18 @@
+1. Module Parameters:
+    -> Parameters can be used to associate a value to a symbolic name, using the keyword "parameter".
+    -> Parameters can be overwritten at compile time from a module instantiation.
+    -> "localparam" is just like "parameter", but can't be overwritten.
+    -> Parameters must resolve to a constant at compile time. They can't be changed during module execution.
+
+2. Parameters Declaration:
+    -> parameter size = 8;
+    -> localparam outsize = 16;
+    -> reg    [size-1:0] dataa, datab;
+    -> reg [outsize-1:0] out;
+
+3. Parameters Declaration After Verilog-2001:
+    -> In Verilog-2001 style, parameters declaration can be included with the module declaration:
+        > module module_name
+            #(parameter size = 8)
+            (...);
+            ...

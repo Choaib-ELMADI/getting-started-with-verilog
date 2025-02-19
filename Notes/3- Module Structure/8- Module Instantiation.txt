@@ -1,0 +1,33 @@
+1. Instantiation Format:
+    -> Once a model is declared, it may be instantiated at a higher-level component.
+
+    -> <component_name> #<delay> <instance_name> (port_list);
+        > <component_name>:
+            - The module name of your lower-level component.
+        > #<delay>:
+            - Delay through component, during simulation only.
+            - This one is optional.
+        > <instance_name>:
+            - Unique name applied to individual component instance.
+        > <port_list>:
+            - List of signals to connect to the component.
+
+    -> By instantiating models, you can create designs with multiple levels hierarchy, to achieve easier maintainability.
+
+2. Connecting Module Instantiation Ports:
+    -> When connecting signals to lower-level module ports, there are two methods to define the connections:
+        - By ordered list
+        - By name
+
+    -> By ordered list:
+        - Port connections are defined by the order of the port list in the lower-level module declaration.
+        - Order of the port connections DOES matter.
+        > half_adder u1 (c1, s1, a, b);
+        ->> c1, s1, a and b are signals within the higher-level module.
+
+    -> By name:
+        - Port connections are defined by names.
+        - Order of the port connections DOES NOT matter.
+        > half_adder u2 (.co(c1), .sum(s1), .a(a), .b(b));
+        ->> c1, s1, a and b are signals within the higher-level module.
+        ->> co, sum, a and b are the ports of the lower-level module.
