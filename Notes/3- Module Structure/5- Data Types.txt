@@ -1,0 +1,8 @@
+1. Net Data Types:
+    -> Nets represent physical interconnects between processes or functional blocks (Mux, Adder, ...).
+    -> Nets need to be driven continuously, and they don't store values.
+    -> The "assign" operator continuously drive a net. Delays can be added to continuous assign statements.
+
+2. Variable Data Types:
+    -> Variables represent elements that store data temporarily.
+    -> Variable data types may be synthesized into hardware flip-flops, registers or combinatorial nodes.

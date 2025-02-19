@@ -1,0 +1,14 @@
+1. Variable Data Types:
+    -> Variables can be any one of the following:
+        > reg : unsigned variable of any bit size.
+        > reg signed is used for signed implementation.
+        > integer : signed 32-bit variable.
+        > real, time, realtime : for simulation purposes only, no sunthesis support.
+
+    -> Variables can be assigned only within a procedure, a task or a function.
+
+    -> Variables can't be continuously driven using the "assign" keyword.
+
+2. Bus Declarations:
+    -> reg [MSB:LSB] <signal_name>;
+    -> reg [LSB:MSB] <signal_name>;

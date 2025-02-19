@@ -1,0 +1,10 @@
+1. Net Data Types:
+    -> Here are four most commonly used net data types, supported by synthesis:
+        > wire    : represents a node or connection.
+        > tri     : represents a tri-state node.
+        > supply0 : logic '0'
+        > supply1 : logic '1'
+
+2. Bus Declarations:
+    -> <data_type> [MSB:LSB] <signal_name>;
+    -> <data_type> [LSB:MSB] <signal_name>;
