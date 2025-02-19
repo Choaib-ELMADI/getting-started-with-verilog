@@ -1,0 +1,20 @@
+1. Assigning Values:
+    -> Numbers can be assigned to variables in two ways, "sized" or "unsized": <size>'<base_format><number>.
+        > Sized example   : 3'b010 --> 3-bit wide binary number.
+        > Unsized example :    123 --> 32-bit wide decimal number by default.
+
+    -> No specified <base_format> defaults to decimal.
+    -> No specified <size> defaults to 32-bit wide number.
+
+2. Base Formats:
+    -> Decimal ('d or 'D)
+    -> Hexadecimal ('h or 'H)
+    -> Binary ('b or 'B)
+    -> Octal ('o or 'O)
+    -> Signed ('s or 'S)
+
+3. Special Number Characters:
+    -> '-'        : Used for negative numbers before the <size>.
+    -> '_'        : Used for readability.
+    -> 'x' or 'X' : Used for unknown values.
+    -> 'z' or 'Z' : Used for high impedance values.
