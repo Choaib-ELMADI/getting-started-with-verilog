@@ -1,0 +1,71 @@
+1. Arithmetic Operators:
+    => Treats vectors as a whole value.
+
+    -> +  : Add or Positive
+    -> -  : Subtract or Negative
+    -> *  : Multiply
+    -> /  : Divide
+    -> %  : Modulus
+    -> ** : Exponent
+
+2. Bitwise Operators:
+    => Result is the size of the largest operand.
+    => Operates on each bit or bit pairing of the operands.
+
+    -> ~        : Invert each bit
+    -> &        : AND each bit (or bit pairing)
+    -> |        : OR each bit (or bit pairing)
+    -> ^        : XOR each bit (or bit pairing)
+    -> ~^ or ^~ : XNOR each bit (or bit pairing)
+
+3. Reduction Operators:
+    => Reduces a vector to a signle bit value.
+
+    -> &        : AND all bits
+    -> ~&       : NAND all bits
+    -> |        : OR all bits
+    -> ~|       : NOR all bits
+    -> ^        : XOR all bits
+    -> ~^ or ^~ : XNOR all bits
+
+4. Relational Operators:
+    => Returns a 1-bit scalar value of boolean true (1) / false (0).
+
+    -> >  : Greater than
+    -> <  : Less than
+    -> >= : Greater than or equal to
+    -> <= : Less than or equal to
+
+5. Equality Operators:
+    => Returns a 1-bit scalar value of boolean true (1) / false (0).
+
+    -> ==  : Equality
+    -> !=  : Inequality
+    -> === : Case equality
+    -> !== : Case inequality
+
+6. Logical Operators:
+    => Returns a 1-bit scalar value of boolean true (1) / false (0).
+
+    -> !  : Expression not true
+    -> && : AND of two expressions
+    -> || : OR of two expressions
+
+7. Shift Operators:
+    => Shifts a vector left or right some defined number of bits.
+    => Left shifts always fill vacated positions with 0s.
+    => Logical right shift always fill vacated positions with 0s.
+    => Unsigned arithmetic right shift always fill vacated positions with 0s.
+    => Signed arithmetic right shift always fill vacated positions with sign bit value.
+    => Shifted bits are lost.
+    => Shifts by values of 'X' or 'Z' return unknown.
+
+    -> <<  : Logical shift left
+    -> >>  : Logical shift right
+    -> <<< : Arithmetic shift left
+    -> >>> : Arithmetic shift right
+
+8. Miscellaneous Operators:
+    -> ? :  : Conditional test --> (condition) ? true_value : false_value;
+    -> {}   : Concatenate      --> {ain, bin}
+    -> {{}} : Replicate        --> {3 {3'b101}} => 9'b101101101
