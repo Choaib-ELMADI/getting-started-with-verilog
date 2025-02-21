@@ -1,0 +1,100 @@
+vsim -gui work.clock_signal_generator
+vsim -gui work.clock_signal_generator 
+Start time: 12:56:11 on Feb 21,2025
+Loading work.clock_signal_generator
+Saving layout as "New_Def_Sim"
+Saving layout as "My_Layout"
+add wave -position insertpoint  \
+sim:/clock_signal_generator/clk
+run
+** Note: $finish    : C:/Users/Choaib ELMADI/Documents/D.I.F.Y/2. Electronics/2. FPGA/Getting Started with Verilog/Projects/ModelSim/Clock_Signal_Generator/clock_signal_generator.v(9)
+   Time: 100 ps  Iteration: 0  Instance: /clock_signal_generator
+1
+Break in Module clock_signal_generator at C:/Users/Choaib ELMADI/Documents/D.I.F.Y/2. Electronics/2. FPGA/Getting Started with Verilog/Projects/ModelSim/Clock_Signal_Generator/clock_signal_generator.v line 9
+vlog -work work -stats=none {C:/Users/Choaib ELMADI/Documents/D.I.F.Y/2. Electronics/2. FPGA/Getting Started with Verilog/Projects/ModelSim/Clock_Signal_Generator/clock_signal_generator.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module clock_signal_generator
+
+Top level modules:
+	clock_signal_generator
+
+
+run
+vlog -work work -stats=none {C:/Users/Choaib ELMADI/Documents/D.I.F.Y/2. Electronics/2. FPGA/Getting Started with Verilog/Projects/ModelSim/Clock_Signal_Generator/clock_signal_generator.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module clock_signal_generator
+
+Top level modules:
+	clock_signal_generator
+
+
+run
+restart
+** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+Loading work.clock_signal_generator
+run
+GetModuleFileName: The specified module could not be found.
+
+
+** Note: $finish    : C:/Users/Choaib ELMADI/Documents/D.I.F.Y/2. Electronics/2. FPGA/Getting Started with Verilog/Projects/ModelSim/Clock_Signal_Generator/clock_signal_generator.v(9)
+   Time: 200 ps  Iteration: 0  Instance: /clock_signal_generator
+1
+Break in Module clock_signal_generator at C:/Users/Choaib ELMADI/Documents/D.I.F.Y/2. Electronics/2. FPGA/Getting Started with Verilog/Projects/ModelSim/Clock_Signal_Generator/clock_signal_generator.v line 9
+vlog -work work -stats=none {C:/Users/Choaib ELMADI/Documents/D.I.F.Y/2. Electronics/2. FPGA/Getting Started with Verilog/Projects/ModelSim/Clock_Signal_Generator/clock_signal_generator.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module clock_signal_generator
+
+Top level modules:
+	clock_signal_generator
+
+
+restart
+** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+Loading work.clock_signal_generator
+run
+GetModuleFileName: The specified module could not be found.
+
+
+** Note: $finish    : C:/Users/Choaib ELMADI/Documents/D.I.F.Y/2. Electronics/2. FPGA/Getting Started with Verilog/Projects/ModelSim/Clock_Signal_Generator/clock_signal_generator.v(9)
+   Time: 250 ps  Iteration: 0  Instance: /clock_signal_generator
+1
+Break in Module clock_signal_generator at C:/Users/Choaib ELMADI/Documents/D.I.F.Y/2. Electronics/2. FPGA/Getting Started with Verilog/Projects/ModelSim/Clock_Signal_Generator/clock_signal_generator.v line 9
+restart
+run
+GetModuleFileName: The specified module could not be found.
+
+
+** Note: $finish    : C:/Users/Choaib ELMADI/Documents/D.I.F.Y/2. Electronics/2. FPGA/Getting Started with Verilog/Projects/ModelSim/Clock_Signal_Generator/clock_signal_generator.v(9)
+   Time: 250 ps  Iteration: 0  Instance: /clock_signal_generator
+1
+Break in Module clock_signal_generator at C:/Users/Choaib ELMADI/Documents/D.I.F.Y/2. Electronics/2. FPGA/Getting Started with Verilog/Projects/ModelSim/Clock_Signal_Generator/clock_signal_generator.v line 9
+restart
+run
+GetModuleFileName: The specified module could not be found.
+
+
+** Note: $finish    : C:/Users/Choaib ELMADI/Documents/D.I.F.Y/2. Electronics/2. FPGA/Getting Started with Verilog/Projects/ModelSim/Clock_Signal_Generator/clock_signal_generator.v(9)
+   Time: 250 ps  Iteration: 0  Instance: /clock_signal_generator
+1
+Break in Module clock_signal_generator at C:/Users/Choaib ELMADI/Documents/D.I.F.Y/2. Electronics/2. FPGA/Getting Started with Verilog/Projects/ModelSim/Clock_Signal_Generator/clock_signal_generator.v line 9
+vlog -work work -stats=none {C:/Users/Choaib ELMADI/Documents/D.I.F.Y/2. Electronics/2. FPGA/Getting Started with Verilog/Projects/ModelSim/Clock_Signal_Generator/clock_signal_generator.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module clock_signal_generator
+
+Top level modules:
+	clock_signal_generator
+
+
+restart
+** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+Loading work.clock_signal_generator
+run
+GetModuleFileName: The specified module could not be found.
+
+
+** Note: $finish    : C:/Users/Choaib ELMADI/Documents/D.I.F.Y/2. Electronics/2. FPGA/Getting Started with Verilog/Projects/ModelSim/Clock_Signal_Generator/clock_signal_generator.v(9)
+   Time: 300 ps  Iteration: 0  Instance: /clock_signal_generator
+1
+Break in Module clock_signal_generator at C:/Users/Choaib ELMADI/Documents/D.I.F.Y/2. Electronics/2. FPGA/Getting Started with Verilog/Projects/ModelSim/Clock_Signal_Generator/clock_signal_generator.v line 9
+End time: 13:27:24 on Feb 21,2025, Elapsed time: 0:31:13
+Errors: 0, Warnings: 1
