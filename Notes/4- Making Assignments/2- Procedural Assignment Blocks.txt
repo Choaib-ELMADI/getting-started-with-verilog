@@ -1,0 +1,31 @@
+1. Procedural Assignment Blocks:
+    -> Procedural assignments are made inside procedural assignment blocks.
+    -> There are two types of procedural assignment blocks:
+        > initial:
+            - Used to initialize behavioral statements for simulation.
+        > always:
+            - Always executing in a looping fashion.
+            - Used to describe the circuit functionality using behavioral statements.
+
+    -> Each "always" and "initial" block represents a separate process.
+    -> Processes run in parallel and start at simulation time 0.
+    -> Statements inside a process execute sequentially.
+    -> The "always" and "initial" blocks cannot be nested.
+
+2. Initial Block:
+    -> The initial block consists of behavioral statements.
+    -> An initial block starts at time 0, executes only once during simulation, and then doesn't execute again.
+    -> Keywords "begin" and "end" must be used if the block contains more than one statement.
+    -> The initial block executes only once, but the duration of this initial block maybe infinite.
+    -> Use-cases examples:
+        - Initialization
+        - Monitoring
+        - Any functionality that needs to be turned on just once
+
+3. Always Block:
+    -> The always block consists of behavioral statements.
+    -> Always blocks execute concurrently starting at time 0, and continuously in a looping fashion.
+    -> Keywords "begin" and "end" must be used if the block contains more than one statement.
+    -> Use-cases examples:
+        - Modeling a digital circuit
+        - Any process or functionality that needs to be executed continuously

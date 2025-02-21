@@ -1,0 +1,14 @@
+1. Continuous Assignment Statements:
+    -> A continuous assignment statement is used to represente combinatorial logic using expressions and operators.
+    -> The left-hand side (LHS) must be a net data type.
+    -> These statements are always active.
+    -> When one of the right-hand side (RHS) operands changes, expression is evaluated, and LHS net is updated immediately.
+    -> RHS operands can be nets, registers, or function calls.
+    -> Delay values can be assigned to model gate delays.
+
+2. Examples:
+    -> /* Implicit continuous assignment */
+    -> wire [15:0] adder_out = mult_out + out;
+    -> This statement is equivalent to:
+        > wire [15:0] adder_out;
+        > assign adder_out = mult_out + out;
