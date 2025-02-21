@@ -1,0 +1,8 @@
+1. Procedural Assignments:
+    -> Procedural assignments reside inside of procedural blocks.
+    -> There are two types of procedural assignments:
+        - Blocking assignments (=)
+        - Non-blocking assignments (<=)
+    -> Blocking assignments (=) are executed in the order they are specified in a sequential block.
+    -> Non-blocking assignments (<=) allow scheduling of assignments without blocking execution of the following statements in a sequential block.
+    -> The left-hand side operand must be a variable data type.
