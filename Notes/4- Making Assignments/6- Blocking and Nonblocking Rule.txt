@@ -1,0 +1,5 @@
+1. Blocking and Non-blocking Rule:
+    -> Use blocking operator (=) for combinatorial logic.
+    -> Use non-blocking operator (<=) for sequential logic.
+
+    -> This avoids confusion and unintended hardware implementations during RTL synthesis.
