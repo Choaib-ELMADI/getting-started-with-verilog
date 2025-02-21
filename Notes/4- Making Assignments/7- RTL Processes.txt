@@ -1,0 +1,12 @@
+1. RTL Processes:
+    -> There are two types of RTL processes:
+        > Combinatorial processes:
+            - These processes are sensitive to all inputs used in the combinatorial logic.
+            - The always block includes all these input signals in the sensitivity list.
+            - always @ (a, b, sel) ...
+            - always @ * ...
+        > Clocked processes:
+            - These processes are sensitive to a clock or/and control signals.
+            - Sensitivity list can be further controlled by adding keywords:
+                + posedge: positive edge, to trigger the block at positive edge transitions only.
+                + negedge: negative edge, to trigger the block at negative edge transitions only.
