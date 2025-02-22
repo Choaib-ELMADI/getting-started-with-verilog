@@ -1,0 +1,18 @@
+1. Format:
+    if <condition_1>
+        { sequence of statement(s) }
+    else if <condition_2>
+        { sequence of statement(s) }
+    ...
+    else
+        { sequence of statement(s) }
+
+2. Example:
+    always @ * begin
+        if (sela)
+            q = a;
+        else if (selb)
+            q = b;
+        else
+            q = c;
+    end

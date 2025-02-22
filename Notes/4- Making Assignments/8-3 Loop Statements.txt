@@ -1,0 +1,35 @@
+1. Forever Loop:
+    -> It executes continually, but it's not synthesizable.
+    -> It's important to make sure that time advances between loop iterations.
+    -> Example:
+        initial begin
+            clk = 0;
+            forever #25 clk = ~clk; // A period of 50 time units === 50psec
+        end
+
+2. Repeat Loop:
+    -> It executes a fixed number of times.
+    -> Example:
+        if (rotate == 1)
+            repeat (8) begin
+                temp = data[15];
+                data = { data << 1, temp };
+            end
+
+3. While Loop:
+    -> It executes if the associated expression is true.
+    -> Example:
+        initial begin
+            count = 0;
+            while (count < 101) begin
+                $display ("Count = %d", count);
+                count = count + 1;
+            end
+        end
+
+4. For Loop:
+    -> It executes the initial assignment at the start of the loop and then executes the loop body if the associated expression is true.
+    -> Example:
+        for (i=4; i<=7; i=i+1) begin
+            result[i] = result[i-4];
+        end

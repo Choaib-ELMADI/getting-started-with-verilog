@@ -1,0 +1,9 @@
+1. Behavioral Statements:
+    -> Behavioral statements must be used inside a procedural block (initial or always).
+    -> Behavioral Statements:
+        > If-else statements:
+            - Prioritization: Conditions are evaluated in order, from top to bottom.
+        > Case statements:
+            - No prioritization: Conditions are evaluated at once.
+        > Loop statements:
+            - Used for repetitive operations.

@@ -1,0 +1,25 @@
+1. Format:
+    case { expression }
+        <condition_1>:
+            { sequence of statement(s) }
+        <condition_2>:
+            { sequence of statement(s) }
+        ...
+        default: // (Optional)
+            { sequence of statement(s) }
+    endcase
+
+2. Example:
+    always @ * begin
+        case (sel)
+            2'b00  : q = a;
+            2'b01  : q = b;
+            2'b10  : q = c;
+            default: q = d;
+        endcase
+    end
+
+3. Other Fomrs of Case Statements:
+    -> "case" treats 'X' and 'Z' as logic values. Don't care characters are denoted by '?'.
+    -> "casez" treats both 'Z' and '?' in the case conditions as don't cares.
+    -> "casex" treats 'X', 'Z' and '?' in the case conditions as don't cares.
