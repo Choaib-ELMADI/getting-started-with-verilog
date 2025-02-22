@@ -1,0 +1,26 @@
+1. Functions and Tasks:
+    -> Verilog HDL has two types of subprograms: Functions and Tasks.
+    -> They both must be defined inside a module and they consist of behavioral statements (like procedural blocks).
+    -> They are used to avoid repetitive code and enhance readability.
+    -> Functions:
+        - Return a single value based on their inputs.
+        - Are used for combinational logic.
+        - Cannot include delays (#), event controls (@), or wait statements.
+        - Are used in expressions.
+    -> Tasks:
+        - Return multiple values via output arguments.
+        - Are used for sequential and combinational logic.
+        - Can contain timing control (#, @, wait).
+        - Are invoked as statements.
+
+2. Differences Between Functions and Tasks:
+    -> Functions:
+        > May call another function but not a task.
+        > Must have at least one input argument.
+        > Cannot have output or inout arguments.
+        > Always execute in zero time.
+
+    -> Tasks:
+        > May call functions or other tasks.
+        > May have zero or more input, output or inout arguments.
+        > May execute in non-zero simulation time.
