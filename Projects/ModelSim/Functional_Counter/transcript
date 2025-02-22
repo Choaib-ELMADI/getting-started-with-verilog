@@ -1,0 +1,26 @@
+project open {C:/Users/Choaib ELMADI/Documents/D.I.F.Y/2. Electronics/2. FPGA/Getting Started with Verilog/Projects/ModelSim/Functional_Counter/Functional_Counter}
+vsim -gui work.functional_counter_tb
+vsim -gui work.functional_counter_tb 
+Start time: 15:31:24 on Feb 22,2025
+Loading work.functional_counter_tb
+Loading work.functional_counter
+add wave -position insertpoint  \
+sim:/functional_counter_tb/clk
+add wave -position insertpoint  \
+sim:/functional_counter_tb/aclr
+add wave -position insertpoint  \
+sim:/functional_counter_tb/d
+add wave -position insertpoint  \
+sim:/functional_counter_tb/op
+view -new wave
+-new not supported on PE
+add wave -position insertpoint  \
+sim:/functional_counter_tb/q
+run
+** Note: $finish    : C:/Users/Choaib ELMADI/Documents/D.I.F.Y/2. Electronics/2. FPGA/Getting Started with Verilog/Projects/ModelSim/Functional_Counter/functional_counter_tb.v(33)
+   Time: 100 ps  Iteration: 0  Instance: /functional_counter_tb
+1
+Break in Module functional_counter_tb at C:/Users/Choaib ELMADI/Documents/D.I.F.Y/2. Electronics/2. FPGA/Getting Started with Verilog/Projects/ModelSim/Functional_Counter/functional_counter_tb.v line 33
+image file format "bmp" is unknown
+End time: 15:39:38 on Feb 22,2025, Elapsed time: 0:08:14
+Errors: 0, Warnings: 1
