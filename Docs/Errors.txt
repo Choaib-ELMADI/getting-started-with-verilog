@@ -1,0 +1,2 @@
+Error: vlog-2110  ==> Solution: Change the output ports type to a variable (reg, ...).
+Error: vlog-13069 ==> Solution: Missing block probably!
