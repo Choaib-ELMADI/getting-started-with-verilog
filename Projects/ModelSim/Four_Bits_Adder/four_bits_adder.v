@@ -1,8 +1,8 @@
 module four_bits_adder
     (
-        input      [3:0] a, b,
-        output reg       c, o,
-        output reg [4:0] s
+        input  [3:0] a, b,
+        output       c, o,
+        output [4:0] s
     );
 
     wire [3:0] cout;
@@ -12,10 +12,8 @@ module four_bits_adder
     one_bit_full_adder obfa_2 (.a(a[2]), .b(b[2]), .c_in(cout[1]), .s(s[2]), .c_out(cout[2]));
     one_bit_full_adder obfa_3 (.a(a[3]), .b(b[3]), .c_in(cout[2]), .s(s[3]), .c_out(cout[3]));
 
-    always @ (cout) begin
-        s[4] <= cout[3];
-        c    <= cout[3];
-        o    <= cout[3] ^ cout[2];
-    end
+    assign s[4] = cout[3];
+    assign c    = cout[3];
+    assign o    = cout[3] ^ cout[2];
 
 endmodule
