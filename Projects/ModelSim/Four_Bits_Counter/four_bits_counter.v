@@ -6,6 +6,11 @@ module four_bits_counter
         output reg       overflow
     );
 
+    initial begin
+        counter  = 4'b0000;
+        overflow = 1'b0;
+    end
+
     always @ (posedge clk)
         begin
             if (reset) begin

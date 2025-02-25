@@ -12,14 +12,6 @@ module four_bits_counter_tb;
         clk1 = 1'b0; clk2 = 1'b0; clk3 = 1'b0;
     end
 
-    // assign counter1 = 4'b0000;
-    // assign counter2 = 4'b0000;
-    // assign counter3 = 4'b0000;
-
-    // assign overflow1 = 1'b0;
-    // assign overflow2 = 1'b0;
-    // assign overflow3 = 1'b0;
-
     always #(period1 / 2) clk1 = ~clk1;
     always #(period2 / 2) clk2 = ~clk2;
     always #(period3 / 2) clk3 = ~clk3;
@@ -33,7 +25,7 @@ module four_bits_counter_tb;
         #50;
 
         reset = 1'b0;
-        #100;
+        #200;
 
         reset = 1'b1;
         #50;
