@@ -7,30 +7,21 @@ module d_flip_flop
         output reg [3:0] q, nq
     );
 
-    always @ (negedge clk, preset, clear)
+    always @ (posedge preset, posedge clear)
         begin
-            if (preset) begin
-                q  = 4'b1111;
-                nq = 4'b0000;
-            end
-            else if (clear) begin
-                q  = 4'b0000;
-                nq = 4'b1111;
-            end
-            else begin
-                if (set) begin
-                    q  = 4'b0110;
-                    nq = 4'b1001;
-                end
-                else if (reset) begin
-                    q  = 4'b0011;
-                    nq = 4'b1100;
-                end
-                else begin
-                    q  = data;
-                    nq = ~data;
-                end
+            if      (preset) q = 4'b1111;
+            else if  (clear) q = 4'b0000;
+        end
+
+    always @ (posedge clk)
+        begin
+            if (!preset && !clear) begin
+                if        (set) q = 4'b1111;
+                else if (reset) q = 4'b0000;
+                else            q = data;
             end
         end
+
+    always @ * nq = ~q;
 
 endmodule
