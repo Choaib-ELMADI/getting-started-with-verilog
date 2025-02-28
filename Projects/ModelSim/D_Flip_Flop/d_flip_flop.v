@@ -7,7 +7,7 @@ module d_flip_flop
         output reg [3:0] q, nq
     );
 
-    always @ (posedge preset, posedge clear)
+    always @ (preset, clear)
         begin
             if      (preset) q = 4'b1111;
             else if  (clear) q = 4'b0000;
