@@ -1,0 +1,129 @@
+$comment
+	File created using the following command:
+		vcd file half_adder.msim.vcd -direction
+$end
+$date
+	Fri Feb 28 17:59:21 2025
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module half_adder_vlg_vec_tst $end
+$var reg 1 ! a $end
+$var reg 1 " b $end
+$var wire 1 # c $end
+$var wire 1 $ s $end
+
+$scope module i1 $end
+$var wire 1 % gnd $end
+$var wire 1 & vcc $end
+$var wire 1 ' unknown $end
+$var tri1 1 ( devclrn $end
+$var tri1 1 ) devpor $end
+$var tri1 1 * devoe $end
+$var wire 1 + ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 , ~QUARTUS_CREATED_UNVM~~busy $end
+$var wire 1 - ~QUARTUS_CREATED_ADC1~~eoc $end
+$var wire 1 . ~QUARTUS_CREATED_ADC2~~eoc $end
+$var wire 1 / s~output_o $end
+$var wire 1 0 c~output_o $end
+$var wire 1 1 a~input_o $end
+$var wire 1 2 b~input_o $end
+$var wire 1 3 s~0_combout $end
+$var wire 1 4 c~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1"
+0#
+1$
+0%
+1&
+x'
+1(
+1)
+1*
+0+
+z,
+z-
+z.
+1/
+00
+01
+12
+13
+04
+$end
+#1000
+1!
+11
+14
+03
+0/
+10
+1#
+0$
+#2000
+0"
+0!
+01
+02
+04
+00
+0#
+#3000
+1!
+11
+13
+1/
+1$
+#4000
+1"
+0!
+01
+12
+#5000
+1!
+11
+14
+03
+0/
+10
+1#
+0$
+#6000
+0"
+0!
+01
+02
+04
+00
+0#
+#7000
+1!
+11
+13
+1/
+1$
+#8000
+1"
+0!
+01
+12
+#9000
+1!
+11
+14
+03
+0/
+10
+1#
+0$
+#10000

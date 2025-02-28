@@ -1,0 +1,73 @@
+// Copyright (C) 2024  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "02/28/2025 17:59:16"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          half_adder
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module half_adder_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg a;
+reg b;
+// wires                                               
+wire c;
+wire s;
+
+// assign statements (if any)                          
+half_adder i1 (
+// port map - connection between master ports and signals/registers   
+	.a(a),
+	.b(b),
+	.c(c),
+	.s(s)
+);
+initial 
+begin 
+#10000 $finish;
+end 
+
+// a
+always
+begin
+	a = 1'b0;
+	a = #1000 1'b1;
+	#1000;
+end 
+
+// b
+initial
+begin
+	b = 1'b1;
+	# 2000;
+	repeat(2)
+	begin
+		b = 1'b0;
+		b = #2000 1'b1;
+		# 2000;
+	end
+end 
+endmodule
+
